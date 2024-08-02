@@ -1,0 +1,389 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* Body Style */
+body {
+    color: white;
+    background-image: url('background.jpg');
+    background-size: cover; /* Adjusts the image to cover the entire background */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the background image fixed when scrolling */
+    background-position: 50% 50%; /* Centers the background image */
+    
+}
+
+
+.container {
+    position: relative;
+    display: inline-block; /* Adjusts to the size of its children */
+    width: 100%; /* Make sure it takes full width */
+}
+
+
+.rightSection img {
+    position: relative;
+    z-index: 2; /* Foreground image */
+}
+
+.blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; /* Background image */
+}
+
+.blur img {
+    width: 200%; /* Ensure it covers the same area as the container */
+    height: auto;
+    margin-top: -50px;
+    margin-left: 105px;
+    overflow: hidden
+}
+
+
+
+    
+
+    nav a{
+        text-decoration: none;
+        color: #ffffff;
+
+        position: relative;
+        align-items: center;
+
+        
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-size: 15.3px;
+        margin-right: 69px;
+    }
+
+    nav a::before{
+        content: '';
+        position: absolute;
+        top: 120%;
+        left: 0;
+        width: 0%;
+        height: 2px;
+        background: #ff00ff;
+        transition: .3s;
+    }
+
+    nav a:hover:before {
+        width: 100%;
+    }
+
+    .CV {
+        height: 48px;
+        align-self: center;
+        appearance: none;
+        background-color: transparent;
+        border: 2px solid#ff00ff;
+        border-radius: 15px;
+        box-sizing: border-box;
+        color: #ff00ff;
+        cursor: pointer;
+        display: inline-block;
+        font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+        font-size: 16px;
+        font-weight: 600;
+        line-height: normal;
+        margin: 0;
+        min-height: 60px;
+        min-width: 0;
+        outline: none;
+        padding: 16px 24px;
+        text-align: center;
+        text-decoration: none;
+        transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        width: 12%;
+        will-change: transform;
+        margin-left: 872px;
+    }
+    
+    
+    .CV:disabled {
+        pointer-events: none;
+      }
+      
+      .CV:hover {
+        color: #fff;
+        background-color: #ff00ff;
+        box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+        transform: translateY(-2px);
+      }
+      
+      .CV:active {
+        box-shadow: none;
+        transform: translateY(0);
+      }
+  
+
+
+    .header {
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 1px 0px;
+        display: flex;
+        z-index: 100;
+        height: 100px;
+        background: transparent;
+        align-items: center;
+    }
+    .left img{
+       
+        margin-left: 59px;
+        height: 160px;
+        /* Adjust the height as needed */
+        width: 160px;
+        /* Maintain aspect ratio */
+        margin-top: 12px;
+        
+    }
+
+    
+    /* First Section Style */
+    .firstSection {
+        display: flex;
+        margin: 130px 0;
+        height: 360px;
+        position: relative;
+    }
+
+    .firstSection>div {
+        width: 30%;
+    }
+
+    .leftSection {
+        font-size: 50px;
+        font-family: "Arial Unicode MS", sans-serif;
+        font-weight: 700;
+        white-space: nowrap; /* Prevent text from wrapping */
+        width: auto; /* Adjust the width to fit content */
+    }
+    
+    .purple {
+        color: #ff00ff;
+    }
+
+    #element {
+        color: #ff00ff;
+        font-size: 27.6px;
+    }
+
+    /* Second Section Style */
+    .SecondSection {
+        max-width: 100vw;
+        margin: auto;
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-size: 1.4rem;
+        height: 73vh;
+        background-color: #aa0aaae1;
+        color: rgb(255, 255, 255);
+        padding: 100px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        font-size: 25px;
+        position: relative;
+        z-index: 3; 
+    }
+
+    .text-gray {
+        color: rgb(235, 224, 224);
+        font-size: 1.2rem;
+    }
+
+    .container {
+        display: flex;
+        gap: 50px;
+    }
+
+    .box {
+        width: 230px;
+        padding: 31px;
+        height: 170px;
+        margin-top: 60px;
+        margin-left: 50px;
+
+        background-color:#000000;
+
+        text-align: center;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: all 0.5s ease;
+    }
+
+    .box:hover {
+        background-color: #353535;
+
+    }
+
+    .heading {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 5px;
+        font-family: "Poppins", sans-serif;
+        color: #ffffff;
+    }
+
+    .subheading {
+        font-size: 14px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 200;
+        color: #ffffff;
+    }
+
+    .box img {
+        width: auto;
+        height: 80px;
+        margin-bottom: 10px;
+        align-items: center;
+        
+
+    }
+
+    footer {
+        background-color: #0e0e1a;
+        height: 350px;
+    }
+
+    .footer {
+        display: flex;
+        
+    }
+
+    /* footer start here > */
+    .footer-first h3 {
+        margin: 50px 100px 10px;
+        /* Adjust the top and bottom margin values as needed */
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 1.2em;
+    }
+
+    .footer-first h5 {
+        margin: 16px 100px 10px;
+        /* Adjust the top and bottom margin values as needed */
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-size: 15px;
+        color: #8d8d8d;
+        text-decoration: none;
+    }
+
+    .footer-Second h6 {
+        margin: 50px 30px 10px;
+        /* Adjust the top and bottom margin values as needed */
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 1.2em;
+    }
+
+    .footer-Second h7 {
+        margin: 16px 30px 10px;
+        /* Adjust the top and bottom margin values as needed */
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-size: 15px;
+        display: flex;
+        color: #8d8d8d;
+        text-decoration: none;
+    }
+
+    .footer-third h6 {
+        margin: 50px 70px 10px;
+        /* Adjust the top and bottom margin values as needed */
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 1.2em;
+    }
+
+    .footer-third h8 {
+        margin: 16px 70px 10px;
+        /* Adjust the top and bottom margin values as needed */
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 15px;
+        display: flex;
+        color: #8d8d8d;
+        text-decoration: none;
+    }
+
+    .footer-first a,
+    .footer-second a,
+    .footer-third a {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+        /* Ensure each link is on a new line */
+
+    }
+
+    .footer a {
+        text-decoration: none;
+        color: inherit;
+        /* Inherit color from the parent element */
+        display: block;
+        /* Ensure each link is on a new line */
+
+    }
+
+    .footer a:hover {
+        color: #d2c6ec;
+        /* Change color on hover if desired */
+    }
+
+    .footer-fourth {
+        margin: 50px 100px 10px;
+        /* Adjust the top and bottom margin values as needed */
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 1.2em;
+    }
+
+    .icon a {
+        display: inline-block;
+        background-color: #ff00ff;
+        width: 40px;
+        height: 40px;
+        margin-right: 20px;
+        margin-top: 16px;
+        text-align: center;
+        line-height: 40px;
+        transition: all 0.5s ease;
+        border-radius: 30px;
+        font-size: 16px;
+    }
+
+    .icon a:hover {
+        color: #ff00ff;
+        background-color: #333333;
+    }
+
+    ::-webkit-scrollbar{
+        width: 7px;
+        
+    }
+    ::-webkit-scrollbar-track{
+        background: #5a5a5a;
+    }
+
+    ::-webkit-scrollbar-thumb{
+        background:  #ff00ff;
+        border-radius: 50px;
+    }
+    /* button */
+
+   

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Google Fonts Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header Section with Navigation Bar -->
+    
+    <header class="header">
+        <a  class="left"href="/">
+            <img src="logo (2).svg">
+        </a>
+
+        <nav class="linkss" style="align-self: center;  position: absolute; left: 400px;">
+            <a href="/">Home</a>
+            <a href="/">About</a>
+            <a href="/">Services</a>
+            <a href="/">Projects</a>
+            <a href="/">Contact</a>
+        </nav>
+
+        <button class="CV">Download CV</button>
+</a>
+    </header>
+   
+
+    <!-- Main Content -->
+    <main>
+        <!-- First Section -->
+        <section class="firstSection">
+            <div class="leftSection">
+                <div   style="margin-left: 82px;">Hello! I’m</div>
+                <span class="purple">Harris Buckley</span>
+                <span id="element"></span>
+            </div>
+            <div class="container">
+                <div class="blur">
+                    <img src="blur3.png" alt="Blur Background" class="background">
+                </div>
+                <div class="rightSection">
+                    <img src="person6.svg" alt="Person">
+            </div>
+              
+        </section>
+       
+
+
+       
+
+
+        <!-- Second Section -->
+        <section class="SecondSection">
+            <h1>Our Services</h1>
+            <span class="text-gray">From our early days, we've been providing reliable service to our clientele.</span>
+            <span class="text-gray">We've had the honor of being the firm of choice of the following
+                corporations:</span>
+
+
+            <div class="container">
+                <div class="box">
+                    <img src="web.png" id="img2" style="height: 70px; margin-left: 12px;">
+                    <div class="heading">Web Development</div>
+                    <div class="subheading">Creating Seamless and Dynamic Websites
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="graphic.png">
+                    <div class="heading">Graphic Designing</div>
+                    <div class="subheading">Crafting Visual Masterpieces</div>
+                </div>
+
+                <div class="box">
+                    <img src="commun.png">
+                    <div class="heading">Communication</div>
+                    <div class="subheading">Building Strong Client Relationships</div>
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+    <!-- footer -->
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Developer Portfolio</h3>
+                <h5><a href="/">Skills</a></h5>
+                <h5><a href="/">Certifications</a></h5>
+                <h5><a href="/">Portfolio Highlights</a></h5>
+                <h5><a href="/">Projects</a></h5>
+                <h5><a href="/">Experience</a></h5>
+                <h5><a href="/">Services Offered</a></h5>
+            </div>
+            <div class="footer-Second">
+                <h6>Learn</h6>
+                <h7><a href="/">Our Story</a></h7>
+                <h7><a href="/">FAQ's</a></h7>
+                <h7><a href="/">Shop All</a></h7>
+                <h7><a href="/">Unit Testing</a></h7>
+                <h7><a href="/">Testimonials</a></h7>
+            </div>
+            <div class="footer-third">
+                <h6>More from Developer</h6>
+                <h8><a href="/">Sign In</a></h8>
+                <h8><a href="/">Wholesale Opportunities</a></h8>
+                <h8><a href="/">Affiliate</a></h8>
+                <h8><a href="/">Contact Us</a></h8>
+            </div>
+
+
+            <div class="footer-fourth">
+                <h9>Follow Us</h9>
+                <div class="icon">
+                    <a href="/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="/"><i class="fab fa-instagram"></i></a>
+                    <a href="/"><i class="fab fa-x"></i></a>
+                    <a href="/"><i class="fab fa-tiktok"></i></a>
+
+                </div>
+            </div>
+
+
+
+    </footer>
+
+    <!-- Load Typed.js library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Graphic Designer'],
+            typeSpeed: 50,
+            loop: true, // Enable loop
+            loopCount: Infinity // Optional - number of loops, Infinity means infinite loop
+        });
+    </script>
+</body>
+
+</html>
