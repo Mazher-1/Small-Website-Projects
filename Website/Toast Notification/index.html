@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toast Notification</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/aff9e09662.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        
+
+        button:nth-child(1) {
+            background-color: #4CAF50;
+        }
+
+        button:nth-child(2) {
+            background-color: #f44336;
+        }
+
+        button:nth-child(3) {
+            background-color: #ff9800;
+        }
+
+        #toastBox {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            z-index: 9999;
+        }
+
+        
+
+        .toast.show {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+       
+    </style>
+</head>
+
+<body>
+    <div class="buttons">
+        <button onclick="showToast(successMsg)">Success</button>
+        <button onclick="showToast(errorMsg)">Error</button>
+        <button onclick="showToast(invalidMsg)">Invalid</button>
+    </div>
+
+    <div id="toastBox"></div>
+
+    <script>
+        const toastBox = document.getElementById("toastBox");
+        const successMsg = '<i class="fa-solid fa-circle-check"></i> Successfully Submitted';
+        const errorMsg = '<i class="fa-solid fa-circle-xmark"></i> Please Fix the code';
+        const invalidMsg = '<i class="fa-solid fa-circle-exclamation"></i> Invalid Input';
+
+        function showToast(msg) {
+            const toast = document.createElement("div");
+            toast.classList.add('toast', 'show');
+            toast.innerHTML = msg;
+
+            if (msg.toLowerCase().includes('successfully')) {
+                toast.classList.add('success');
+            } else if (msg.toLowerCase().includes('fix')) {
+                toast.classList.add('error');
+            } else if (msg.toLowerCase().includes('invalid')) {
+                toast.classList.add('invalid');
+            }
+
+            toastBox.appendChild(toast);
+
+            setTimeout(() => {
+                toast.classList.remove('show');
+                setTimeout(() => toast.remove(), 500);
+            }, 4000);
+        }
+    </script>
+</body>
+
+</html>
